@@ -1,0 +1,16 @@
+swarm:
+  datasources:
+    data-sources:
+      u7b20Data:
+        driver-name: oracle
+        connection-url: jdbc:oracle:thin:@myhost:2188:TU7B20
+        user-name: myuser
+        password: pypassword
+        valid-connection-checker-class-name: org.jboss.jca.adapters.jdbc.extensions.oracle.OracleValidConnectionChecker
+        validate-on-match: true
+        background-validation: false
+        stale-connection-checker-class-name: org.jboss.jca.adapters.jdbc.extensions.oracle.OracleStaleConnectionChecker
+        exception-sorter-class-name: org.jboss.jca.adapters.jdbc.extensions.oracle.OracleExceptionSorter
+
+
+#swarm diventa thorntail dalla 2.3.0
